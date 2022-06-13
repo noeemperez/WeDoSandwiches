@@ -1,0 +1,69 @@
+$ancla: (
+    color:white,
+    size: $size-6,
+    display:block,
+    style: italic
+);
+
+footer {
+    display:flex;
+    flex-direction: column;
+    background-color: black;
+    height: auto;
+
+    /* Contenedor padre de logo y redes */
+    .footerInicio {
+        display:flex;
+        justify-content: space-between;
+
+        .logoFooter {
+            margin: 20px 10px 20px 130px;
+        }
+
+        .redes {
+            color:white;
+            width: 250px;
+            height: auto;
+            margin: 20px 130px 20px 10px;
+            text-align: left;
+
+            h4{
+                margin-bottom: 20px;
+            }
+        
+            li a{
+                color: map-get($ancla, color);
+                font-size: map-get($ancla, size);
+                display:map-get($ancla, display);
+                font-style: map-get($ancla, style);
+
+                i {
+                    color: red;
+                }
+            }
+        }
+    }
+    .footerFinal{
+        text-align: center;
+        color:$color-principal;
+        font-weight: bold;
+        font-size: $size-7; 
+    }
+}
+
+@media screen and (max-width: 900px) {
+   footer {
+       .footerInicio {
+            .logoFooter {
+               margin-left: 30px;
+            }
+            .redes {
+                margin-right: 30px;
+
+                h4 {
+                    font-size: $size-6;
+                  }
+            }
+        }
+    }
+}

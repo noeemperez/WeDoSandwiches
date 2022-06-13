@@ -1,0 +1,59 @@
+@import url(https://allfont.es/allfont.css?fonts=holla);
+
+/* Declaracion Variables */
+$fuente: 'Holla', arial;
+
+/*Tamaño Fuentes */
+$size-1: 4rem;
+$size-2: 2.5rem;
+$size-3: 2rem;
+$size-4: 1.6rem;
+$size-5: 1.4rem;
+$size-6:1.2rem;
+$size-7: 1rem;
+
+/* Colores */
+$color-principal: rgba(254, 115, 64, 0.978);
+$color-gradiente: rgba(254, 115, 64, 0.37);
+$color-menu: rgba(255, 255, 255, 0.89);
+
+
+.titulosEstilo {
+    font-weight: bold;
+    text-align: center;
+}
+
+h1 {
+    @extend .titulosEstilo;
+    font-size: $size-1;
+    margin-bottom: 20px;
+    padding:20px;  
+} 
+
+h2 {
+    @extend .titulosEstilo;
+    font-size: $size-2; 
+    text-align: left;
+    margin-left: 42px;
+}
+
+h3 {
+    font-size: $size-3;
+    text-align:left;
+    font-weight: bold;
+    color:black;
+    margin: 20px 0px 30px 70px;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block;
+}

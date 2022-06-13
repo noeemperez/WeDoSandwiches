@@ -1,0 +1,198 @@
+@charset "UTF-8";
+@import url(https://allfont.es/allfont.css?fonts=holla);
+/* Declaracion Variables */
+/*Tamaño Fuentes */
+/* Colores */
+.titulosEstilo, h1, h2 {
+  font-weight: bold;
+  text-align: center; }
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  padding: 20px; }
+
+h2 {
+  font-size: 2.5rem;
+  text-align: left;
+  margin-left: 42px; }
+
+h3 {
+  font-size: 2rem;
+  text-align: left;
+  font-weight: bold;
+  color: black;
+  margin: 20px 0px 30px 70px; }
+
+li {
+  list-style-type: none;
+  display: inline;
+  margin-right: 30px; }
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  display: inline-block; }
+
+/* Estilos del menu hamburguesa */
+.navbar {
+  background-image: linear-gradient(to bottom, rgba(254, 115, 64, 0.978), rgba(254, 115, 64, 0.37)); }
+
+.navbar-brand {
+  margin: 20px 10px 20px 30px; }
+
+.navbar-toggler {
+  margin-right: 30px; }
+
+.navbar-nav {
+  font-family: "Holla", arial;
+  font-size: 2rem;
+  text-align: right;
+  margin-right: 30px; }
+  .navbar-nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    display: inline-block; }
+
+.indexMenu {
+  height: 745px;
+  background-image: url(../img/sandwich/cheddar.jpg);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .indexMenu a {
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: rgba(254, 115, 64, 0.978);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin: 20px 20px 20px 20px; }
+    .indexMenu a:hover {
+      filter: grayscale(50%); }
+
+.indexProductos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px; }
+  .indexProductos a {
+    font-size: 1.6rem;
+    text-align: center;
+    background-color: rgba(254, 115, 64, 0.978);
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+    margin: 20px; }
+    .indexProductos a:hover {
+      filter: grayscale(50%); }
+
+.indexMapa {
+  margin-bottom: 30px; }
+
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 2rem;
+    margin: 0; } }
+
+@media screen and (max-width: 767px) {
+  .indexMenu {
+    background-image: linear-gradient(to top, rgba(254, 115, 64, 0.978), rgba(254, 115, 64, 0.37));
+    height: 200px; }
+    .indexMenu h1 {
+      font-size: 2rem;
+      margin: 0; }
+    .indexMenu a {
+      font-size: 1.2rem; }
+  .indexProductos a {
+    font-size: 1.2rem; } }
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: auto;
+  /* Contenedor padre de logo y redes */ }
+  footer .footerInicio {
+    display: flex;
+    justify-content: space-between; }
+    footer .footerInicio .logoFooter {
+      margin: 20px 10px 20px 130px; }
+    footer .footerInicio .redes {
+      color: white;
+      width: 250px;
+      height: auto;
+      margin: 20px 130px 20px 10px;
+      text-align: left; }
+      footer .footerInicio .redes h4 {
+        margin-bottom: 20px; }
+      footer .footerInicio .redes li a {
+        color: white;
+        font-size: 1.2rem;
+        display: block;
+        font-style: italic; }
+        footer .footerInicio .redes li a i {
+          color: red; }
+  footer .footerFinal {
+    text-align: center;
+    color: rgba(254, 115, 64, 0.978);
+    font-weight: bold;
+    font-size: 1rem; }
+
+@media screen and (max-width: 900px) {
+  footer .footerInicio .logoFooter {
+    margin-left: 30px; }
+  footer .footerInicio .redes {
+    margin-right: 30px; }
+    footer .footerInicio .redes h4 {
+      font-size: 1.2rem; } }
+
+.conoce {
+  padding-bottom: 2rem; }
+
+@media screen and (max-width: 1023px) {
+  h1 {
+    font-size: 2rem;
+    margin: 0; } }
+
+.menu {
+  max-width: 100%;
+  margin-right: 3rem;
+  padding-top: 2rem;
+  position: center; }
+  .menu .row {
+    justify-content: space-evenly; }
+    .menu .row article {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.89);
+      height: auto;
+      text-align: left;
+      margin: 2%;
+      padding: 2% 2%;
+      border: 2px solid rgba(254, 115, 64, 0.978);
+      opacity: 0.7; }
+      .menu .row article p {
+        color: black; }
+
+.fondo1 {
+  background-image: url(../img/sandwich/ternera.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 65%; }
+
+.fondo2 {
+  background-image: url(../img/ensaladas/salpicortada.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 65%; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Holla", arial;
+  background-color: beige; }

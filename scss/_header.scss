@@ -1,0 +1,31 @@
+/* Estilos del menu hamburguesa */
+@mixin nav($family, $size, $alineacion, $margin){
+    font-family: $family;
+    font-size: $size;
+    text-align: $alineacion;
+    margin-right: $margin;
+
+}; 
+
+.navbar {
+    background-image: linear-gradient(to bottom, $color-principal, $color-gradiente);
+}
+
+.navbar-brand {
+    margin: 20px 10px 20px 30px;
+}
+
+.navbar-toggler {
+    margin-right: 30px;
+}
+
+.navbar-nav{
+    @include nav ($fuente, $size-3, right, 30px);
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        display: inline-block;
+    }
+}
