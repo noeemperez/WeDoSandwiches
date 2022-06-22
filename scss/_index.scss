@@ -1,73 +1,106 @@
-.indexMenu {
-    height: 745px;
-    background-image: url(../img/sandwich/cheddar.jpg);
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
+// Estilos Galeria
+.galeria {
+  max-width: 990px;
+  max-height: 660px;
+  margin:auto;
+  padding: 20px;
 
-    a {
-        font-size: $size-4;
-        text-align: center;
-        background-color: rgba(254, 115, 64, 0.978);
-        padding: 0.3rem;
-        border-radius: 0.3rem;
-        margin: 20px 20px 20px 20px;
-        
-        &:hover{
-            filter: grayscale(50%);
-        }
-    }
+  .carousel-control-prev-icon {
+    width: 4rem;
+    height: 4rem;
+    font-weight: 900;
+  }
+
+  .carousel-control-next-icon {
+    @extend .carousel-control-prev-icon;
+  }
+
+  .carousel-indicators {
+    font-weight: 900;
+  }
 }
 
-.indexProductos{
+// Estilos Invitacion a ver Menú
+.indexMenu {
+    max-width: 90%;
+    margin-inline:auto;
+    margin-block: 30px;
+    background-color: $amarillo-medio;
+    border-radius: 0.9rem;
     display:flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
+
+    p {
+      font-size: $size-5;
+      font-weight: bold;
+      text-align: center;
+    }
 
     a {
-        font-size: $size-4;
+        font-size: $size-5;
         text-align: center;
-        background-color: rgba(254, 115, 64, 0.978);
+        background-color: $naranja-oscuro;
         padding: 0.3rem;
         border-radius: 0.3rem;
         margin: 20px;
 
-        &:hover {
-            filter: grayscale(50%);
-        }
-     }
-}
-
- .indexMapa {
-     margin-bottom: 30px;
- }
-
-@media screen and (max-width: 1023px) {
-    h1 {
-        font-size: $size-3;
-        margin: 0;
-      }
-}
-@media screen and (max-width: 767px) {
-    .indexMenu {
-      background-image: linear-gradient(to top, $color-principal, $color-gradiente);
-      height: 200px;
-
-      h1 {
-        font-size: $size-3;
-        margin: 0;
-      }
-
-      a {
-        font-size: $size-6;
-      }
-    }
-  
-    .indexProductos {
-        a {
-            font-size: $size-6;
+        &:hover{
+          filter: opacity(80%);
         }
     }
+}
+
+//Estilo invitación a ver productos
+.indexProductos{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  margin: auto;
+
+  .container {
+    padding: 0;
+    max-width: 1500px;
+    width: auto;
+
+    img {
+      display:block;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+//Estilo Mapa
+.indexMapa {
+    margin-block: 30px;
+}
+
+//Estilos para adaptarse a distintos dispositivos
+@media screen and (max-width: 1401px) {
+  .indexProductos {
+    img {
+      width: 300px;
+    }
+  }
+}
+
+@media screen and (max-width: 948px) {
+  .indexMenu {
+    max-width: 100%;
+
+    a {
+      font-size: $size-6;
+    }
+  }
+
+  .indexProductos {
+    h2 {
+      font-size: $size-4;
+    }
+    img {
+      width: 300px;
+      margin: auto;
+    }
+  }
 }
