@@ -3,26 +3,21 @@
 /* Declaracion Variables */
 /*Tamaño Fuentes */
 /* Colores */
-.titulosEstilo, h1, h2 {
+.titulosEstilo, h1, h2, h3 {
+  color: black;
   font-weight: bold;
-  text-align: center; }
-
-h1 {
-  font-size: 4rem;
+  text-align: center;
   margin-bottom: 20px;
   padding: 20px; }
 
+h1 {
+  font-size: 4rem; }
+
 h2 {
-  font-size: 2.5rem;
-  text-align: left;
-  margin-left: 42px; }
+  font-size: 2.5rem; }
 
 h3 {
-  font-size: 2rem;
-  text-align: left;
-  font-weight: bold;
-  color: black;
-  margin: 20px 0px 30px 70px; }
+  font-size: 2rem; }
 
 li {
   list-style-type: none;
@@ -37,7 +32,7 @@ a {
 
 /* Estilos del menu hamburguesa */
 .navbar {
-  background-image: linear-gradient(to bottom, rgba(254, 115, 64, 0.978), rgba(254, 115, 64, 0.37)); }
+  background-image: linear-gradient(to bottom, #FE3D11, #FE6111); }
 
 .navbar-brand {
   margin: 20px 10px 20px 30px; }
@@ -56,57 +51,72 @@ a {
     color: black;
     display: inline-block; }
 
+.galeria {
+  max-width: 990px;
+  max-height: 660px;
+  margin: auto;
+  padding: 20px; }
+  .galeria .carousel-control-prev-icon, .galeria .carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+    font-weight: 900; }
+  .galeria .carousel-indicators {
+    font-weight: 900; }
+
 .indexMenu {
-  height: 745px;
-  background-image: url(../img/sandwich/cheddar.jpg);
-  background-size: cover;
+  max-width: 90%;
+  margin-inline: auto;
+  margin-block: 30px;
+  background-color: #FEA211;
+  border-radius: 0.9rem;
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .indexMenu p {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center; }
   .indexMenu a {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     text-align: center;
-    background-color: rgba(254, 115, 64, 0.978);
+    background-color: #FE3D11;
     padding: 0.3rem;
     border-radius: 0.3rem;
-    margin: 20px 20px 20px 20px; }
+    margin: 20px; }
     .indexMenu a:hover {
-      filter: grayscale(50%); }
+      filter: opacity(80%); }
 
 .indexProductos {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 50px; }
-  .indexProductos a {
-    font-size: 1.6rem;
-    text-align: center;
-    background-color: rgba(254, 115, 64, 0.978);
-    padding: 0.3rem;
-    border-radius: 0.3rem;
-    margin: 20px; }
-    .indexProductos a:hover {
-      filter: grayscale(50%); }
+  max-width: 1500px;
+  margin: auto; }
+  .indexProductos .container {
+    padding: 0;
+    max-width: 1500px;
+    width: auto; }
+    .indexProductos .container img {
+      display: block;
+      margin-bottom: 20px; }
 
 .indexMapa {
-  margin-bottom: 30px; }
+  margin-block: 30px; }
 
-@media screen and (max-width: 1023px) {
-  h1 {
-    font-size: 2rem;
-    margin: 0; } }
+@media screen and (max-width: 1401px) {
+  .indexProductos img {
+    width: 300px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 948px) {
   .indexMenu {
-    background-image: linear-gradient(to top, rgba(254, 115, 64, 0.978), rgba(254, 115, 64, 0.37));
-    height: 200px; }
-    .indexMenu h1 {
-      font-size: 2rem;
-      margin: 0; }
+    max-width: 100%; }
     .indexMenu a {
       font-size: 1.2rem; }
-  .indexProductos a {
-    font-size: 1.2rem; } }
+  .indexProductos h2 {
+    font-size: 1.6rem; }
+  .indexProductos img {
+    width: 300px;
+    margin: auto; } }
 
 footer {
   display: flex;
@@ -123,20 +133,15 @@ footer {
       color: white;
       width: 250px;
       height: auto;
-      margin: 20px 130px 20px 10px;
-      text-align: left; }
+      margin: 55px 130px 20px 10px;
+      text-align: center; }
       footer .footerInicio .redes h4 {
-        margin-bottom: 20px; }
+        margin-bottom: 30px; }
       footer .footerInicio .redes li a {
-        color: white;
-        font-size: 1.2rem;
-        display: block;
-        font-style: italic; }
-        footer .footerInicio .redes li a i {
-          color: red; }
+        color: white; }
   footer .footerFinal {
     text-align: center;
-    color: rgba(254, 115, 64, 0.978);
+    color: #FE6111;
     font-weight: bold;
     font-size: 1rem; }
 
@@ -148,13 +153,37 @@ footer {
     footer .footerInicio .redes h4 {
       font-size: 1.2rem; } }
 
-.conoce {
-  padding-bottom: 2rem; }
+h2 {
+  margin-top: 20px;
+  color: #FE8311; }
 
-@media screen and (max-width: 1023px) {
-  h1 {
-    font-size: 2rem;
-    margin: 0; } }
+.conoce p {
+  max-width: 500px;
+  font-size: 1.4rem;
+  text-align: justify; }
+
+.opinion {
+  margin-bottom: 100px;
+  align-items: center; }
+  .opinion .op {
+    background-color: #FEBD11;
+    margin-inline: 20px;
+    padding: 50px;
+    border-radius: 10px; }
+    .opinion .op p {
+      font-size: 1.2rem;
+      text-align: justify;
+      color: black;
+      font-weight: 500; }
+
+@media screen and (max-width: 991px) {
+  h2 {
+    font-size: 2rem; }
+  .conoce p {
+    font-size: 1.2rem;
+    padding-top: 30px; }
+  .opinion .op {
+    margin-bottom: 30px; } }
 
 .menu {
   max-width: 100%;
@@ -165,12 +194,12 @@ footer {
     justify-content: space-evenly; }
     .menu .row article {
       display: block;
-      background-color: rgba(255, 255, 255, 0.89);
+      background-color: #FEA211;
       height: auto;
       text-align: left;
       margin: 2%;
       padding: 2% 2%;
-      border: 2px solid rgba(254, 115, 64, 0.978);
+      border: 2px solid #FE6111;
       opacity: 0.7; }
       .menu .row article p {
         color: black; }
@@ -195,4 +224,4 @@ footer {
 
 body {
   font-family: "Holla", arial;
-  background-color: beige; }
+  background-color: #FEBF113D; }
