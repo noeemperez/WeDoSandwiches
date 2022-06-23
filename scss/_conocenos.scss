@@ -11,14 +11,20 @@ h2 {
 }
 
 .opinion {
-    margin-bottom: 100px;
+    margin-bottom: 30px;
     align-items: center;
+
+    .row {
+        margin: 0;
+    }
 
     .op {
         background-color: $amarillo-claro;
         margin-inline: 20px;
         padding: 50px;
         border-radius: 10px;
+        min-width: 335px;
+        margin-bottom: 30px;
 
         p {
             font-size: $size-6;
@@ -37,11 +43,6 @@ h2 {
         p {
             font-size: $size-6;
             padding-top: 30px;
-        }
-    }
-    .opinion {
-        .op {
-            margin-bottom: 30px;
         }
     }
 }

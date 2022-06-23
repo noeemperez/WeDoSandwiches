@@ -8,31 +8,53 @@
 
         article {
             display: block;
-            background-color: $color-menu;
+            background-color: rgba(245, 245, 220, 0.473);
             height: auto;
             text-align: left;
             margin: 2%;
             padding: 2% 2%;
-            border: 2px solid $color-principal;
-            opacity: 0.7;
-    
+            border: 3px solid $naranja-oscuro;
+
             p {
+                color: black;
+                font-size: $size-5;
+                font-weight: 600;
+                line-height: 1.8;
+            }
+            h4 {
                 color:black;
+                font-size: $size-4;
+                font-weight: 600;
             }
           }
     }
 }
 .fondo1 {
+    margin-top: 20px;
     background-image: url(../img/sandwich/ternera.jpg);
     background-size: cover;
     background-position: center;
     width:100%;
     height: 65%;
+
 }
 .fondo2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
     background-image: url(../img/ensaladas/salpicortada.jpg);
     background-size: cover;
     background-position: center;
     width:100%;
     height: 65%;
+}
+
+@media screen and (max-width: 767px) {
+    .menu {
+        article {
+            p {
+                font-weight: 300;
+            }
+        }
+    }
+
 }
