@@ -69,29 +69,7 @@ a {
   .galeria .carousel-indicators {
     font-weight: 900; }
 
-.indexMenu {
-  max-width: 90%;
-  margin-inline: auto;
-  margin-block: 30px;
-  background-color: #FEA211;
-  border-radius: 0.9rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center; }
-  .indexMenu p {
-    font-size: 1.4rem;
-    font-weight: bold;
-    text-align: center; }
-  .indexMenu a {
-    font-size: 1.4rem;
-    text-align: center;
-    background-color: #FE3D11;
-    padding: 0.3rem;
-    border-radius: 0.3rem;
-    margin: 20px; }
-    .indexMenu a:hover {
-      filter: opacity(80%); }
-
+/* Shadow */
 .indexProductos {
   display: flex;
   flex-direction: column;
@@ -104,7 +82,12 @@ a {
     width: auto; }
     .indexProductos .container img {
       display: block;
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.25); }
+      .indexProductos .container img:hover {
+        transform: translateY(-0.25rem);
+        box-shadow: 0 1.125rem 0.875rem rgba(0, 0, 0, 0.25);
+        transition: all 0.25s ease; }
 
 .indexMapa {
   margin-block: 30px; }

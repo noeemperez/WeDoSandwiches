@@ -22,36 +22,15 @@
   }
 }
 
-// Estilos Invitacion a ver Menú
-.indexMenu {
-    max-width: 90%;
-    margin-inline:auto;
-    margin-block: 30px;
-    background-color: $amarillo-medio;
-    border-radius: 0.9rem;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-
-    p {
-      font-size: $size-5;
-      font-weight: bold;
-      text-align: center;
-    }
-
-    a {
-        font-size: $size-5;
-        text-align: center;
-        background-color: $naranja-oscuro;
-        padding: 0.3rem;
-        border-radius: 0.3rem;
-        margin: 20px;
-
-        &:hover{
-          filter: opacity(80%);
-        }
-    }
-}
+/* Shadow */
+$shadow-color: hsla(0,0,0,0.25);
+$shadow-blur: 0.625rem;
+$offset-x: 0;
+$offset-y: 0.25rem; //padding de cada columna
+$shadow-blur-hover: $shadow-blur + $offset-y;
+$offset-y-hover: $shadow-blur-hover + $offset-y;
+$shadow: $offset-x $offset-y $shadow-blur $shadow-color;
+$shadow-hover: $offset-x $offset-y-hover $shadow-blur-hover $shadow-color;
 
 //Estilo invitación a ver productos
 .indexProductos{
@@ -69,6 +48,12 @@
     img {
       display:block;
       margin-bottom: 20px;
+      box-shadow: $shadow;
+      &:hover {
+        transform: translateY(-$offset-y);
+        box-shadow: $shadow-hover;
+        transition: all 0.25s ease;
+      }
     }
   }
 }
