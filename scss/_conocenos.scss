@@ -2,47 +2,52 @@ h2 {
     margin-top:20px;
     color: $naranja-amarillo;
 }
+
+// Estilo seccion Conoce
 .conoce {
     p {
-        max-width: 500px;
         font-size: $size-5;
-        text-align: justify;
+        text-align: left;
+        padding: 25px;
+        margin: 0;
     }
 }
 
+// Estilo seccion Opinion
 .opinion {
     margin-bottom: 30px;
-    align-items: center;
-
-    .row {
-        margin: 0;
-    }
 
     .op {
         background-color: $amarillo-claro;
-        margin-inline: 20px;
         padding: 50px;
         border-radius: 10px;
-        min-width: 335px;
         margin-bottom: 30px;
 
         p {
-            font-size: $size-6;
-            text-align: justify;
+            font-size: $size-5;
+            text-align: left;
             color: black;
             font-weight: 500;
         }
     }
 }
 
-@media screen and (max-width: 991px) {
+//Estilos para adaptarse a distintos dispositivos
+@media screen and (max-width: 576px) {
     h2 {
         font-size: $size-3;
     }
     .conoce {
         p {
             font-size: $size-6;
-            padding-top: 30px;
+        }
+    }
+
+    .opinion {
+        .op {
+            p{
+                font-size: $size-6;
+            }
         }
     }
 }

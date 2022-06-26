@@ -150,34 +150,31 @@ h2 {
   color: #FE8311; }
 
 .conoce p {
-  max-width: 500px;
   font-size: 1.4rem;
-  text-align: justify; }
+  text-align: left;
+  padding: 25px;
+  margin: 0; }
 
 .opinion {
-  margin-bottom: 30px;
-  align-items: center; }
-  .opinion .row {
-    margin: 0; }
+  margin-bottom: 30px; }
   .opinion .op {
     background-color: #FEBD11;
-    margin-inline: 20px;
     padding: 50px;
     border-radius: 10px;
-    min-width: 335px;
     margin-bottom: 30px; }
     .opinion .op p {
-      font-size: 1.2rem;
-      text-align: justify;
+      font-size: 1.4rem;
+      text-align: left;
       color: black;
       font-weight: 500; }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 576px) {
   h2 {
     font-size: 2rem; }
   .conoce p {
-    font-size: 1.2rem;
-    padding-top: 30px; } }
+    font-size: 1.2rem; }
+  .opinion .op p {
+    font-size: 1.2rem; } }
 
 .menu {
   max-width: 100%;
