@@ -1,12 +1,6 @@
 // Variables
 $color-menu: rgba(245, 245, 220, 0.473);
 
-@mixin texto($color, $size, $weight) {
-    color: $color;
-    font-size: $size;
-    font-weight: $weight;
-}
-
 // Estilo Menu
 .menu {
     max-width: 100%;

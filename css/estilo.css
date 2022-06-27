@@ -35,14 +35,14 @@ a {
   background-image: linear-gradient(to bottom, #FE3D11, #FE6111); }
 
 .navbar-brand {
-  margin: 20px 10px 20px 30px; }
+  margin: 10px 10px 10px 30px; }
 
 .navbar-toggler {
   margin-right: 30px; }
 
 .navbar-nav {
   font-family: "Holla", arial;
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-align: right;
   margin-right: 30px; }
   .navbar-nav a {
@@ -53,10 +53,10 @@ a {
 
 @media screen and (max-width: 767px) {
   .navbar-brand img {
-    width: 120px; }
+    width: 90px; }
   .navbar-nav .nav-link {
     line-height: 30px;
-    font-size: 1.5rem; } }
+    font-size: 1.2rem; } }
 
 .galeria {
   width: 100%;
@@ -129,17 +129,17 @@ footer {
       footer .footerInicio .redes li a {
         color: white; }
   footer .footerFinal {
-    text-align: center;
     color: #FE6111;
+    font-size: 1rem;
     font-weight: bold;
-    font-size: 1rem; }
+    text-align: center; }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 767px) {
   footer .footerInicio .logoFooter {
     margin-left: 30px;
     margin-top: 30px; }
     footer .footerInicio .logoFooter img {
-      width: 120px; }
+      width: 90px; }
   footer .footerInicio .redes {
     margin-right: 30px; }
     footer .footerInicio .redes h4 {
@@ -236,6 +236,26 @@ h2 {
   h2 {
     text-align: center;
     font-size: 1.6rem; } }
+
+.contacto {
+  max-width: 90%;
+  margin-inline: auto;
+  margin-block: 20px; }
+
+.formulario {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 30px; }
+  .formulario .comentario {
+    height: 150px; }
+  .formulario .btn {
+    background-color: #FE8311;
+    padding: 12px;
+    font-weight: 600; }
+
+@media screen and (max-width: 767px) {
+  .btn {
+    width: 75px; } }
 
 * {
   margin: 0;
