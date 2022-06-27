@@ -1,0 +1,27 @@
+.contacto {
+    max-width: 90%;
+    margin-inline: auto;
+    margin-block: 20px;
+}
+
+.formulario {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 30px;
+
+    .comentario {
+        height: 150px;
+    }
+
+    .btn {
+        background-color: $naranja-amarillo;
+        padding: 12px;
+        font-weight: 600;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .btn {
+        width: 75px;
+    }
+}
