@@ -20,8 +20,28 @@
     }
 }
 
+@media screen and (max-width: 991px){
+    h1 {
+        font-size: $size-2;
+    }
+}
+
 @media screen and (max-width: 767px) {
+    h2 {
+        font-size: $size-4;
+    }
+
     .btn {
         width: 75px;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    h2 {
+        font-size: $size-6;
+    }
+
+    .formulario {
+        max-width: 95%;
     }
 }

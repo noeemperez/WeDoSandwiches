@@ -1,14 +1,9 @@
-h2 {
-    margin-top:20px;
-    color: $naranja-amarillo;
-}
-
 // Estilo seccion Conoce
 .conoce {
     p {
         font-size: $size-5;
-        text-align: left;
-        padding: 25px;
+        text-align: center;
+        padding: 30px;
         margin: 0;
     }
 }
@@ -25,28 +20,32 @@ h2 {
 
         p {
             font-size: $size-5;
-            text-align: left;
-            color: black;
+            text-align: center;
+            color: $negro;
             font-weight: 500;
         }
     }
 }
 
 //Estilos para adaptarse a distintos dispositivos
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
     h2 {
         font-size: $size-3;
     }
+
     .conoce {
         p {
-            font-size: $size-6;
+            font-size: $size-7;
         }
     }
 
     .opinion {
         .op {
+            margin-inline: 3px;
+            padding: 20px;
+
             p{
-                font-size: $size-6;
+                font-size: $size-7;
             }
         }
     }

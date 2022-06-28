@@ -1,7 +1,7 @@
-@import url(https://allfont.es/allfont.css?fonts=holla);
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
 /* Declaracion Variables */
-$fuente: 'Holla', arial;
+$fuente: 'Roboto Slab', serif;
 
 /*Tamaño Fuentes */
 $size-1: 4rem;
@@ -19,9 +19,11 @@ $naranja-amarillo: #FE8311;
 $amarillo-medio: #FEA211;
 $amarillo-claro: #FEBD11;
 $amarillo-fondo: #FEBF113D;
+$color-menu: rgba(245, 245, 220, 0.473);
+$blanco: white;
+$negro: black;
 
 .titulosEstilo {
-    color: black;
     font-weight: bold;
     text-align: center;
     margin-bottom: 20px;
@@ -30,17 +32,21 @@ $amarillo-fondo: #FEBF113D;
 
 h1 {
     @extend .titulosEstilo;
+    color: $negro;
     font-size: $size-1;
 }
 
 h2 {
     @extend .titulosEstilo;
+    color: $naranja-amarillo;
     font-size: $size-2;
+    margin-top:20px;
 }
 
-h3 {
+h4 {
     @extend .titulosEstilo;
-    font-size: $size-3;
+    color: $negro;
+    font-size: $size-4;
 }
 
 @mixin texto($color, $size, $weight) {
@@ -58,6 +64,6 @@ li {
 a {
     text-decoration: none;
     font-weight: bold;
-    color: black;
+    color: $negro;
     display: inline-block;
 }

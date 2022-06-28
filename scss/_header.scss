@@ -9,6 +9,13 @@
 
 .navbar-toggler {
     margin-right: 30px;
+    width: 51px;
+    height: 35px;
+
+    .navbar-toggler-icon {
+        width: 25px;
+        height: 25px;
+    }
 }
 
 .navbar-nav{
@@ -25,7 +32,7 @@
     }
 }
 
-
+//Estilos para adaptarse a distintos dispositivos
 @media screen and (max-width: 767px) {
     .navbar-brand {
         img {
@@ -34,7 +41,7 @@
     }
     .navbar-nav{
         .nav-link {
-            line-height: 30px;
+            line-height: 15px;
             font-size: $size-6;
         }
     }

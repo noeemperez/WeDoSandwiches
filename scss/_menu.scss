@@ -1,6 +1,3 @@
-// Variables
-$color-menu: rgba(245, 245, 220, 0.473);
-
 // Estilo Menu
 .menu {
     max-width: 100%;
@@ -12,17 +9,12 @@ $color-menu: rgba(245, 245, 220, 0.473);
             display: block;
             background-color: $color-menu;
             height: auto;
-            text-align: left;
             margin: 2%;
             padding: 2%;
             border: 3px solid $naranja-medio;
 
             p {
-                @include texto(black, $size-5, 500);
-            }
-
-            h4 {
-                @include texto(black, $size-4, 600);
+                @include texto($negro, $size-5, 500);
             }
         }
     }
@@ -59,6 +51,23 @@ $color-menu: rgba(245, 245, 220, 0.473);
 
                 h4 {
                     font-size: $size-5;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .menu {
+        .row {
+            article {
+                p {
+                    font-size: $size-7;
+                }
+
+                h4 {
+                    padding: 0;
+                    font-size: $size-6;
                 }
             }
         }

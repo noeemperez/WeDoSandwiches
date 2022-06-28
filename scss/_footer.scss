@@ -1,57 +1,58 @@
+// Estilos footer
 footer {
     display:flex;
     flex-direction: column;
-    background-color: black;
+    background-color: $negro;
     height: auto;
 
-    /* Contenedor padre de logo y redes */
+    // Contenedor padre de logo y redes
     .footerInicio {
         display:flex;
-        justify-content: space-between;
+        justify-content: space-around;
+        margin-block: 40px;
 
-        .logoFooter {
-            margin: 20px 10px 20px 130px;
-        }
-
+        // Estilo redes
         .redes {
-            color:white;
+            color: $blanco;
             width: 250px;
             height: auto;
-            margin: 55px 130px 20px 10px;
+            padding-top: 30px;
             text-align: center;
 
-            h4{
+            h5 {
                 margin-bottom: 30px;
             }
 
-            li a{
-                color: white;
+            li a {
+                color: $blanco;
             }
         }
     }
 
+    // Estilo pie de página
     .footerFinal{
         @include texto($naranja-medio, $size-7, bold);
         text-align: center;
     }
 }
 
+//Estilos para adaptarse a distintos dispositivos
 @media screen and (max-width: 767px) {
-   footer {
-       .footerInicio {
-            .logoFooter {
-               margin-left: 30px;
-               margin-top: 30px;
-               img {
-                width: 90px;
-               }
-            }
-            .redes {
-                margin-right: 30px;
+    .footerInicio {
+        .logoFooter {
+            margin-left: 30px;
+            margin-top: 30px;
 
-                h4 {
-                    font-size: $size-7;
-                  }
+            img {
+                width: 90px;
+            }
+        }
+
+        .redes {
+            margin-inline: 20px;
+
+            h5 {
+                font-size: $size-7;
             }
         }
     }

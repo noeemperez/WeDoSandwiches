@@ -1,23 +1,26 @@
 @charset "UTF-8";
-@import url(https://allfont.es/allfont.css?fonts=holla);
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
 /* Declaracion Variables */
 /*Tamaño Fuentes */
 /* Colores */
-.titulosEstilo, h1, h2, h3 {
-  color: black;
+.titulosEstilo, h1, h2, h4 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
   padding: 20px; }
 
 h1 {
+  color: black;
   font-size: 4rem; }
 
 h2 {
-  font-size: 2.5rem; }
+  color: #FE8311;
+  font-size: 2.5rem;
+  margin-top: 20px; }
 
-h3 {
-  font-size: 2rem; }
+h4 {
+  color: black;
+  font-size: 1.6rem; }
 
 li {
   list-style-type: none;
@@ -38,10 +41,15 @@ a {
   margin: 10px 10px 10px 30px; }
 
 .navbar-toggler {
-  margin-right: 30px; }
+  margin-right: 30px;
+  width: 51px;
+  height: 35px; }
+  .navbar-toggler .navbar-toggler-icon {
+    width: 25px;
+    height: 25px; }
 
 .navbar-nav {
-  font-family: "Holla", arial;
+  font-family: "Roboto Slab", serif;
   font-size: 1.6rem;
   text-align: right;
   margin-right: 30px; }
@@ -55,13 +63,14 @@ a {
   .navbar-brand img {
     width: 90px; }
   .navbar-nav .nav-link {
-    line-height: 30px;
+    line-height: 15px;
     font-size: 1.2rem; } }
 
 .galeria {
-  width: 100%;
-  height: auto;
-  margin-top: 20px; }
+  padding: 50px; }
+  .galeria .carousel {
+    max-width: 1000px;
+    margin: auto; }
   .galeria .carousel-control-prev-icon, .galeria .carousel-control-next-icon {
     width: 4rem;
     height: 4rem;
@@ -69,13 +78,10 @@ a {
   .galeria .carousel-indicators {
     font-weight: 900; }
 
-/* Shadow */
 .indexProductos {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  max-width: 1500px;
-  margin: auto; }
+  align-items: center; }
   .indexProductos .container {
     padding: 0;
     max-width: 1500px;
@@ -83,48 +89,51 @@ a {
     .indexProductos .container img {
       display: block;
       margin-bottom: 20px;
-      box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.25); }
+      box-shadow: 0 4px 10px black; }
       .indexProductos .container img:hover {
-        transform: translateY(-0.25rem);
-        box-shadow: 0 1.125rem 0.875rem rgba(0, 0, 0, 0.25);
+        transform: translateY(-4px);
+        box-shadow: 0 18px 14px black;
         transition: all 0.25s ease; }
 
 .indexMapa {
-  margin-block: 30px; }
+  padding-block: 30px;
+  max-width: 97%;
+  margin: auto; }
 
-@media screen and (max-width: 1401px) {
+@media screen and (max-width: 1199px) {
   .indexProductos img {
     width: 300px; } }
 
-@media screen and (max-width: 948px) {
-  .indexMenu {
-    max-width: 100%; }
-    .indexMenu a {
-      font-size: 1.2rem; }
+@media screen and (max-width: 991px) {
   .indexProductos h2 {
     font-size: 1.6rem; }
   .indexProductos img {
-    width: 300px;
+    width: 200px; } }
+
+@media screen and (max-width: 767px) {
+  .galeria {
+    padding: 0;
+    margin-top: 20px; }
+  .indexProductos img {
+    width: 320px;
     margin: auto; } }
 
 footer {
   display: flex;
   flex-direction: column;
   background-color: black;
-  height: auto;
-  /* Contenedor padre de logo y redes */ }
+  height: auto; }
   footer .footerInicio {
     display: flex;
-    justify-content: space-between; }
-    footer .footerInicio .logoFooter {
-      margin: 20px 10px 20px 130px; }
+    justify-content: space-around;
+    margin-block: 40px; }
     footer .footerInicio .redes {
       color: white;
       width: 250px;
       height: auto;
-      margin: 55px 130px 20px 10px;
+      padding-top: 30px;
       text-align: center; }
-      footer .footerInicio .redes h4 {
+      footer .footerInicio .redes h5 {
         margin-bottom: 30px; }
       footer .footerInicio .redes li a {
         color: white; }
@@ -135,24 +144,20 @@ footer {
     text-align: center; }
 
 @media screen and (max-width: 767px) {
-  footer .footerInicio .logoFooter {
+  .footerInicio .logoFooter {
     margin-left: 30px;
     margin-top: 30px; }
-    footer .footerInicio .logoFooter img {
+    .footerInicio .logoFooter img {
       width: 90px; }
-  footer .footerInicio .redes {
-    margin-right: 30px; }
-    footer .footerInicio .redes h4 {
+  .footerInicio .redes {
+    margin-inline: 20px; }
+    .footerInicio .redes h5 {
       font-size: 1rem; } }
-
-h2 {
-  margin-top: 20px;
-  color: #FE8311; }
 
 .conoce p {
   font-size: 1.4rem;
-  text-align: left;
-  padding: 25px;
+  text-align: center;
+  padding: 30px;
   margin: 0; }
 
 .opinion {
@@ -164,17 +169,20 @@ h2 {
     margin-bottom: 30px; }
     .opinion .op p {
       font-size: 1.4rem;
-      text-align: left;
+      text-align: center;
       color: black;
       font-weight: 500; }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   h2 {
     font-size: 2rem; }
   .conoce p {
-    font-size: 1.2rem; }
-  .opinion .op p {
-    font-size: 1.2rem; } }
+    font-size: 1rem; }
+  .opinion .op {
+    margin-inline: 3px;
+    padding: 20px; }
+    .opinion .op p {
+      font-size: 1rem; } }
 
 .menu {
   max-width: 100%; }
@@ -184,7 +192,6 @@ h2 {
       display: block;
       background-color: rgba(245, 245, 220, 0.473);
       height: auto;
-      text-align: left;
       margin: 2%;
       padding: 2%;
       border: 3px solid #FE6111; }
@@ -192,10 +199,6 @@ h2 {
         color: black;
         font-size: 1.4rem;
         font-weight: 500; }
-      .menu .row article h4 {
-        color: black;
-        font-size: 1.6rem;
-        font-weight: 600; }
 
 .fondo, .fondo1, .fondo2 {
   margin-top: 20px;
@@ -217,25 +220,41 @@ h2 {
   .menu .row article h4 {
     font-size: 1.4rem; } }
 
+@media screen and (max-width: 575px) {
+  .menu .row article p {
+    font-size: 1rem; }
+  .menu .row article h4 {
+    padding: 0;
+    font-size: 1.2rem; } }
+
 .produSeccion {
   margin-inline: 50px;
   margin-bottom: 40px; }
-  .produSeccion h1 {
-    margin-top: 30px;
-    margin-bottom: 0; }
   .produSeccion h2 {
     text-align: left;
-    margin-block: 0; }
+    padding: 0; }
 
 .card-title {
-  font-weight: 600; }
+  font-weight: 600;
+  text-align: center; }
+
+.card-text {
+  text-align: center; }
 
 @media screen and (max-width: 767px) {
   h1 {
-    font-size: 2rem; }
-  h2 {
+    font-size: 2.5rem; }
+  .produSeccion h2 {
     text-align: center;
     font-size: 1.6rem; } }
+
+@media screen and (max-width: 575px) {
+  h1 {
+    font-size: 1.6rem; }
+  .produSeccion {
+    margin-inline: 10px; }
+    .produSeccion h2 {
+      font-size: 1.2rem; } }
 
 .contacto {
   max-width: 90%;
@@ -253,14 +272,26 @@ h2 {
     padding: 12px;
     font-weight: 600; }
 
+@media screen and (max-width: 991px) {
+  h1 {
+    font-size: 2.5rem; } }
+
 @media screen and (max-width: 767px) {
+  h2 {
+    font-size: 1.6rem; }
   .btn {
     width: 75px; } }
+
+@media screen and (max-width: 575px) {
+  h2 {
+    font-size: 1.2rem; }
+  .formulario {
+    max-width: 95%; } }
 
 * {
   margin: 0;
   padding: 0; }
 
 body {
-  font-family: "Holla", arial;
+  font-family: "Roboto Slab", serif;
   background-color: #FEBF113D; }

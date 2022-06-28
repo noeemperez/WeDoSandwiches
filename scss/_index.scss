@@ -1,12 +1,21 @@
+// Shadow
+$shadow-color: $negro;
+$shadow-blur: 10px;
+$offset-x: 0;
+$offset-y: 4px; //padding de cada columna
+$shadow-blur-hover: $shadow-blur + $offset-y;
+$offset-y-hover: $shadow-blur-hover + $offset-y;
+$shadow: $offset-x $offset-y $shadow-blur $shadow-color;
+$shadow-hover: $offset-x $offset-y-hover $shadow-blur-hover $shadow-color;
+
 // Estilos Galeria
 .galeria {
-  width: 100%;
-  height: auto;
-  margin-top: 20px;
-  // max-height: 660px;
-  // margin:auto;
-  // padding: 20px;
+  padding: 50px;
 
+  .carousel {
+    max-width: 1000px;
+    margin:auto;
+  }
   .carousel-control-prev-icon {
     width: 4rem;
     height: 4rem;
@@ -22,23 +31,11 @@
   }
 }
 
-/* Shadow */
-$shadow-color: hsla(0,0,0,0.25);
-$shadow-blur: 0.625rem;
-$offset-x: 0;
-$offset-y: 0.25rem; //padding de cada columna
-$shadow-blur-hover: $shadow-blur + $offset-y;
-$offset-y-hover: $shadow-blur-hover + $offset-y;
-$shadow: $offset-x $offset-y $shadow-blur $shadow-color;
-$shadow-hover: $offset-x $offset-y-hover $shadow-blur-hover $shadow-color;
-
 //Estilo invitación a ver productos
 .indexProductos{
   display:flex;
   flex-direction: column;
   align-items: center;
-  max-width: 1500px;
-  margin: auto;
 
   .container {
     padding: 0;
@@ -60,11 +57,13 @@ $shadow-hover: $offset-x $offset-y-hover $shadow-blur-hover $shadow-color;
 
 //Estilo Mapa
 .indexMapa {
-    margin-block: 30px;
+    padding-block: 30px;
+    max-width: 97%;
+    margin: auto;
 }
 
-//Estilos para adaptarse a distintos dispositivos
-@media screen and (max-width: 1401px) {
+// Estilos para adaptarse a distintos dispositivos
+@media screen and (max-width: 1199px) {
   .indexProductos {
     img {
       width: 300px;
@@ -72,21 +71,27 @@ $shadow-hover: $offset-x $offset-y-hover $shadow-blur-hover $shadow-color;
   }
 }
 
-@media screen and (max-width: 948px) {
-  .indexMenu {
-    max-width: 100%;
-
-    a {
-      font-size: $size-6;
-    }
-  }
-
+@media screen and (max-width: 991px) {
   .indexProductos {
     h2 {
       font-size: $size-4;
     }
+
     img {
-      width: 300px;
+      width: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .galeria {
+    padding: 0;
+    margin-top: 20px;
+  }
+
+  .indexProductos {
+    img {
+      width: 320px;
       margin: auto;
     }
   }
